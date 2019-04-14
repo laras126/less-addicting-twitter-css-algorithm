@@ -1,0 +1,33 @@
+@-moz-document domain(twitter.com) {
+
+	body {
+		filter: grayscale(1) contrast(1.25);
+	}
+
+
+	/* Hide some addictive things */
+	
+	video,
+	[aria-label*="Like"],
+	[aria-label*="Share"],
+	[aria-label*="Retweet"],
+	[aria-label*="Reply"],
+	[data-testid="sidebarColumn"],
+	[data-testid="AppTabBar_Explore_Link"],
+	[data-testid="FloatingActionButtons_Tweet_Button"],[data-testid="AppTabBar_Notifications_Link"] [aria-label*="unread"] {
+		display: none !important;
+	}
+
+
+	/* Some misc. styles */
+	
+	[style*="background-image"] {
+		filter: contrast(1.5) blur(1px);
+		opacity: 0.5;
+	}
+	
+	main article {
+		margin-top: 3rem;
+	}
+  
+}
